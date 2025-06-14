@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Letter - UnsentLetters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal tracking-normal">
+    <header class="bg-white shadow-md py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600"><a href="index.html">UnsentLetters</a></h1>
+            <nav>
+                <a href="feed.html" class="text-blue-500 hover:text-blue-700 ml-4">View Feed</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        <section id="post-form-section" class="bg-white shadow-lg rounded-lg p-6 md:p-8 max-w-2xl mx-auto">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Write Your Letter</h2>
+            <form id="post-letter-form" class="space-y-6">
+                <div>
+                    <label for="letter-content" class="block text-sm font-medium text-gray-700 mb-1">Your Letter:</label>
+                    <textarea id="letter-content" name="content" maxlength="1000" placeholder="Pour your heart out... (Max 1000 characters)" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-48 resize-none"></textarea>
+                    <p id="char-counter" class="text-xs text-gray-500 mt-1 text-right">0/1000</p>
+                </div>
+                <div>
+                    <label for="emotion-tag" class="block text-sm font-medium text-gray-700 mb-1">Choose a Tag:</label>
+                    <select id="emotion-tag" name="tag" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <option value="">-- Select a Tag --</option>
+                        <option value="Love">❤️ Love</option>
+                        <option value="Regret">😔 Regret</option>
+                        <option value="Rage">😡 Rage</option>
+                        <option value="Gratitude">🙏 Gratitude</option>
+                        <option value="Goodbye">👋 Goodbye</option>
+                        <option value="Lost">❓ Lost</option>
+                        <option value="Unspoken Truth">🤫 Unspoken Truth</option>
+                        <option value="Pretending">🎭 Pretending</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg w-full md:w-auto">Submit Anonymously</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 mt-12 text-gray-600 text-sm">
+        <p>&copy; 2023 UnsentLetters. Share your heart, anonymously.</p>
+    </footer>
+</body>
+</html>
