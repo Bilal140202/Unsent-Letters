@@ -1,40 +1,41 @@
-# UnsentLetters – Say What You Never Said
+﻿<div align="center">
+  <img src="https://via.placeholder.com/1200x300/8e44ad/ffffff?text=Unsent-Letters+-+Anonymous+Messaging" alt="Unsent-Letters Banner" width="100%" />
+  <br />
+  <h1>✉️ Unsent-Letters</h1>
+  <p><strong>A Full-Stack Application for Penning and Sharing Anonymous Thoughts</strong></p>
 
-A platform where people write the letters they never sent — to lovers, family, enemies, teachers, the past, or themselves. Others can read these letters, filtered by emotion tags. No names. No logins required. Just truth.
+  <p>
+    <img src="https://img.shields.io/badge/Architecture-Full%20Stack-8A2BE2?style=for-the-badge" alt="Full Stack" />
+    <img src="https://img.shields.io/badge/Environment-Devcontainers-2496ED?style=for-the-badge&logo=docker" alt="Devcontainers" />
+    <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status" />
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+  </p>
+</div>
 
-## MVP v1 Features
+---
 
-*   **📝 Anonymous Letter Post:** Users can write a letter with a selected emotion tag.
-*   **🔍 Browse Letters:** Public feed of all posts.
-*   **🏷️ Tag Filter:** Filter letters by tags.
+## 🌟 Overview
+**Unsent-Letters** is a full-stack platform designed to provide a safe, anonymous space for users to write and optionally share letters they never sent. It utilizes a decoupled frontend and backend architecture for maximum scalability and maintainability.
 
-## Tech Stack (MVP)
+## 🚀 Key Features
+- 🛡️ **Anonymity First:** Built with privacy and data security in mind.
+- 🔄 **Decoupled Architecture:** Clean separation between the user interface and data processing.
+- 📦 **Containerized Development:** Pre-configured with .devcontainer for immediate, hassle-free setup.
+- 📱 **Responsive Design:** Optimized for reading and writing across all device sizes.
 
-*   **Frontend:** HTML, TailwindCSS (via CDN), Vanilla JavaScript
-*   **Backend:** Node.js, Express
-*   **Database:** In-memory (for now)
+## 📁 Repository Structure
+- /backend: The core API, database models, and business logic.
+- /frontend: The user-facing application and interface.
+- .devcontainer: Visual Studio Code Remote Container configuration.
 
-## Running the Project
+## 📦 Getting Started
+`ash
+# Clone the repository
+git clone https://github.com/Bilal140202/Unsent-Letters.git
 
-### Using GitHub Codespaces (Recommended)
+# It is highly recommended to use the included Devcontainer for a unified environment.
+# Otherwise, see the individual /frontend and /backend directories for specific setup instructions.
+`
 
-1.  Open this repository in a GitHub Codespace.
-2.  The `postCreateCommand` in `.devcontainer/devcontainer.json` should automatically run `npm install` in the `backend` directory.
-3.  To start the server, open a terminal in Codespaces and run:
-    ```bash
-    cd backend
-    node server.js
-    ```
-4.  The application will be available on the forwarded port (usually 3000).
-
-### Local Development
-
-1.  **Backend:**
-    *   Navigate to the `backend` directory: `cd backend`
-    *   Install dependencies: `npm install`
-    *   Start the server: `node server.js`
-    *   The backend API will be running on `http://localhost:3000`.
-2.  **Frontend:**
-    *   Open the HTML files (`frontend/index.html`, `frontend/post.html`, `frontend/feed.html`) directly in your web browser.
-    *   Ensure your browser can make requests to `http://localhost:3000` where the backend is running.
-```
+## 📜 License
+This project is licensed under the MIT License.
